@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return response()->json(Product::latest()->paginate(2));
+        return response()->json(Product::latest()->paginate(10));
     }
 
     /**
